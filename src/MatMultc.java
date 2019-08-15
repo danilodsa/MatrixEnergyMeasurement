@@ -34,8 +34,7 @@ public class MatMultc {
         EnergyCheckUtils.init();
         double[] before = EnergyCheckUtils.getEnergyStats();
         
-        Random n = new Random();
-        int opt = n.nextInt(100);
+        int opt = Integer.parseInt(arg[0]);
         createMat(opt);    
 
         double[] after = EnergyCheckUtils.getEnergyStats();
@@ -44,23 +43,23 @@ public class MatMultc {
     }
 //1
     public static void createMat(int opt) {
-        if(opt <= 30){
+        if(opt <= 0){
             createDoubleMat();
             multiplyDouble();   
         } 
-        else if(opt <= 40){
+        else if(opt <= 1){
             createShortMat();
             multiplyShort();
         }
-        else if(opt <= 50){
+        else if(opt <= 2){
             createIntMat();
             multiplyInt();
         }
-        else if(opt <= 75){
+        else if(opt <= 3){
             createFloatMat();
             multiplyFloat();
         }
-        else if(opt <= 100){
+        else if(opt <= 4){
             createLongMat();
             multiplyLong();
         }
