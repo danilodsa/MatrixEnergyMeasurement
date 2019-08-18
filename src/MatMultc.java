@@ -43,25 +43,29 @@ public class MatMultc {
     }
 //1
     public static void createMat(int opt) {
-        if(opt <= 0){
+        if(opt == 0){
             createDoubleMat();
             multiplyDouble();   
         } 
-        else if(opt <= 1){
+        else if(opt == 1){
             createShortMat();
             multiplyShort();
         }
-        else if(opt <= 2){
+        else if(opt == 2){
             createIntMat();
             multiplyInt();
         }
-        else if(opt <= 3){
+        else if(opt == 3){
             createFloatMat();
             multiplyFloat();
         }
-        else if(opt <= 4){
+        else if(opt == 4){
             createLongMat();
             multiplyLong();
+        }
+        else{
+            System.out.println("Invalid Argument");
+            System.exit(1);
         }
 
     }
