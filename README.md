@@ -2,8 +2,11 @@
 
 For run:
 
+
 $ sudo modprobe msr
+
 $ sudo java -jar dist/MatMult.jar [Matrix Type]
+
 
 Matrix Types:
 0 - Double
