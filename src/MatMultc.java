@@ -44,20 +44,20 @@ public class MatMultc {
 //1
     public static void createMat(int opt) {
         if(opt == 0){
-            createDoubleMat();
-            multiplyDouble();   
+            createFloatMat();
+            multiplyFloat();  
         } 
         else if(opt == 1){
             createShortMat();
             multiplyShort();
         }
         else if(opt == 2){
-            createIntMat();
-            multiplyInt();
+            createDoubleMat();
+            multiplyDouble();          
         }
         else if(opt == 3){
-            createFloatMat();
-            multiplyFloat();
+            createIntMat();
+            multiplyInt();            
         }
         else if(opt == 4){
             createLongMat();
