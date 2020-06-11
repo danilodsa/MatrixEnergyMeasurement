@@ -9,10 +9,10 @@ $ sudo java -jar dist/MatMult.jar [Matrix Type]
 
 
 Matrix Types:
-0 - Double;
+0 - Float;
 1 - Short;
-2 - Int;
-3 - Float;
+2 - Double;
+3 - Int;
 4 - Long;
 
 
